@@ -3,12 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package exempclasesabstractas;
+package circulo;
 
 /**
  *
  * @author jalonsoriveiro
  */
 public class CIrculo {
+    float radio;
+        
+    public void carlcularArea(){
     
+        
+    }
 }

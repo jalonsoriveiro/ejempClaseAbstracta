@@ -9,6 +9,17 @@ package exempclasesabstractas;
  *
  * @author jalonsoriveiro
  */
-public class Triangulo {
+public class Triangulo extends Poligonos {
+    
+    float base;
+    float altura;
+
+    @Override
+    public void calcularArea() {
+        System.out.println("Area del triangulo"+(base*altura)/2);
+    }
+    
+
+    
     
 }

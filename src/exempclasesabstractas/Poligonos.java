@@ -5,10 +5,16 @@
  */
 package exempclasesabstractas;
 
+import java.awt.Color;
+
 /**
  *
  * @author jalonsoriveiro
  */
-public class Poligonos {
+public abstract class Poligonos {
     
+    private Color colorRecheo;
+    
+    
+    public abstract void calcularArea();
 }

@@ -9,6 +9,15 @@ package exempclasesabstractas;
  *
  * @author jalonsoriveiro
  */
-public class Rectangulo {
+public class Rectangulo extends Cuadrilatero {
+
+    @Override
+    public void calcularArea() {
+        //Cuadrilatero rec = new Cuadrilatero(); Non podemos instanciar por ser Abstract
+        Cuadrilatero rec = new Rectangulo();
+        
+                                                //con obj       //static       //super 
+        System.out.println("Area Rectangulo= "+(rec.getAltura()*getBase()*super.getAltura()));
+    }
     
 }
