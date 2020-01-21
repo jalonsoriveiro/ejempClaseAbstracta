@@ -11,13 +11,21 @@ package exempclasesabstractas;
  */
 public class Rectangulo extends Cuadrilatero {
 
+    public Rectangulo(float base, float altura) {
+        super(base, altura);
+    }
+
     @Override
     public void calcularArea() {
         //Cuadrilatero rec = new Cuadrilatero(); Non podemos instanciar por ser Abstract
-        Cuadrilatero rec = new Rectangulo();
-        
-                                                //con obj       //static       //super 
-        System.out.println("Area Rectangulo= "+(rec.getAltura()*getBase()*super.getAltura()));
+        /*Cuadrilatero rec = new Rectangulo();
+        Manera de acceder referenciados
+                                                //con obj        //super 
+        System.out.println("Area Rectangulo= "+(rec.getAltura()*super.getAltura()));
+        */
+        System.out.println("Area REctangulo ="+super.getAltura()*super.getBase());
     }
+
+   
     
 }

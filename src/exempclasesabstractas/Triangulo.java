@@ -14,9 +14,16 @@ public class Triangulo extends Poligonos {
     float base;
     float altura;
 
+    public Triangulo(float base, float altura) {
+        this.base = base;
+        this.altura = altura;
+    }
+
+    
+    
     @Override
     public void calcularArea() {
-        System.out.println("Area del triangulo"+(base*altura)/2);
+        System.out.println("Area del triangulo = "+(base*altura)/2);
     }
     
 

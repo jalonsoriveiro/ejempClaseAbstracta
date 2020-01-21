@@ -5,15 +5,23 @@
  */
 package circulo;
 
+import exempclasesabstractas.Poligonos;
+
 /**
  *
  * @author jalonsoriveiro
  */
-public class CIrculo {
-    float radio;
+public class CIrculo extends Poligonos{
+    private float radio;
+
+    public CIrculo(float radio) {
+        this.radio = radio;
+    }
         
-    public void carlcularArea(){
     
-        
+
+    @Override
+    public void calcularArea() {
+        System.out.println("Area ciculo "+(Math.PI*Math.pow(radio, 2)));
     }
 }

@@ -10,10 +10,15 @@ package exempclasesabstractas;
  * @author jalonsoriveiro
  */
 public abstract class Cuadrilatero  extends Poligonos {
-    private static float base;
+    private float base;
     private float altura;
 
-    public static float getBase() {
+    public Cuadrilatero(float base, float altura) {
+        this.base = base;
+        this.altura = altura;
+    }
+
+    public  float getBase() {
         return base;
     }
 
